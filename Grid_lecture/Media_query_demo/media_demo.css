@@ -1,0 +1,148 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 40px;
+  background-color: greenyellow;
+}
+
+/* Default Styles */
+
+header {
+  background-color: lightgrey;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  padding: 0;
+}
+
+main p {
+  font-size: 16px;
+  color: black;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-container > div {
+  padding: 20px;
+  border: 1px solid black;
+  text-align: center;
+  background-color: lightyellow;
+}
+
+.profile_pic {
+  margin-top: 5px;
+  border-radius: 50%;
+  max-width: 450px;
+  max-height: 550px;
+}
+
+.profile-info h2 {
+  margin: 0;
+  color: darkblue;
+
+} 
+  /* .profile_pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+} */
+
+.profile-info p {
+  margin-top: 5px;
+  color: darkgray;
+}
+/* Mobile Landscape */
+
+@media (max-width: 767px) {
+  body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    background-color: blueviolet;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile_pic {
+    margin-left: 300px;
+    max-height: 250px;
+    max-width: 300px;
+    border-radius: 80%;
+  }
+}
+  /* Tablet Landscape */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+    body {
+      background-color: orange;
+    }
+
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr);
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+    }
+
+    .flex-profile {
+      display: flex;
+      justify-content: center;
+      max-height: 100px;
+      max-width: 100px;
+      border-radius: 50%;
+    }
+
+    .profile_pic {
+      border-radius: 50%;
+      max-width: 80px;
+      max-height: 80px;
+    }
+  }
+
+  /* DESKTOP LANDSCAPE */
+
+@media (min-width: 1024px) {
+    body {
+      background-color: pink;
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    main p {
+      font-size: 22px;
+      color: purple;
+    }
+
+    .grid-container {
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: flex-end;
+    }
+
+    .profile_pic {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+}
+

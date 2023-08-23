@@ -5,60 +5,66 @@ body{
 
 .container{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "area-one area-two area-three"
-    "area-four area-five area-six"
-    "area-seven area-eight area-nine"
-    "area-ten area-eleven area-twelve"
-    ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "area-one area-two"
+    "area-three area-four"
+    "area-five area-six"
+    "area-seven area-eight"
+    "area-nine area-ten"
+    "area-eleven area-twelve";
+    gap: 2px 5px;
 }
 
 .one{
-    grid-area: area-one;
+    grid-area: area-one
 }
 
 .two{
-    grid-area: area-two;
+    grid-area: area-two
 }
 
 .three{
-    grid-area: area-three;
+    grid-area: area-three
 }
 
 .four{
-    grid-area: area-four;
+    grid-area: area-four
 }
 
 .five{
-    grid-area: area-five;
+    grid-area: area-five
 }
 
 .six{
-    grid-area: area-six;
+    grid-area: area-six
 }
 
 .seven{
-    grid-area: area-seven;
+    grid-area: area-seven
 }
 
 .eight{
-    grid-area: area-eight;
+    grid-area: area-eight
 }
 
 .nine{
-    grid-area: area-nine;
+    grid-area: area-nine
 }
 
 .ten{
-    grid-area: area-ten;
+    grid-area: area-ten
 }
 
 .eleven{
-    grid-area: area-eleven;
+    grid-area: area-eleven
 }
 
 .twelve{
-    grid-area: area-twelve;
+    grid-area: area-twelve
+}
+
+@media (max-width: 380px){
+
 }
