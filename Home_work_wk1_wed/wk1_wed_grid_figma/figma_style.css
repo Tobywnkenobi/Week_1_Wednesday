@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    display: grid;
+
+}
+
 header {
     display: grid;
     margin: 30px 550px 5px 100px;
@@ -22,15 +27,13 @@ main {
 }
 
 aside {
-    justify-content:flex-start;
-    float: right;
+    display: flex;
+   
+    grid-template-rows: repeat (5, 1fr);
     background-color: red;
-    margin-left: 950px;
-    margin: top 0px;
-    max-height: 700px;
-    max-width: 300px;
-    float: right;
- 
+    max-height: 1200px;
+    max-width: 600px;
+
 }
 
 .family_photo {
@@ -53,9 +56,28 @@ aside {
 
 .div_pip {
     display: grid;
-    grid-template-columns: 1fr 15px;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
     margin: 90px 700px 800px 180px;
-    max-height: 200px;
-    max-width: 200px;
+    max-height: 500px;
+    max-width: 1200px;
     justify-content: flex-start;
+}
+
+.pip_name {
+    display: grid;
+    grid-template-rows: auto 3fr;
+    justify-content: center;
+    grid-template-rows: 150px 1 fr 150px;
+    grid-template-columns: 150px 1fr 150px;
+   
+}
+
+.messages {
+    display: grid;
+    margin: 20px;
+    justify-content: center;
+    justify-items: center;
+    max-width: 100px;
+    max-height: 500px;
 }
