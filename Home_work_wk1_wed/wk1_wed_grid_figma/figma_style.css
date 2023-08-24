@@ -18,15 +18,15 @@ main {
     grid-template-columns: 1fr 15px;
     margin: 5px 700px 5px 5px;
     max-height: 200px;
-    max-width: 200px;
-    
+    max-width: 200px;    
 }
 
 aside {
-    display: grid;
+    justify-content:flex-start;
+    float: right;
     background-color: red;
-    margin-left: 900px;
-    margin: top 0;
+    margin-left: 950px;
+    margin: top 0px;
     max-height: 700px;
     max-width: 300px;
     float: right;
